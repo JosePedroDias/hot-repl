@@ -30,6 +30,17 @@ the `hot-repl` exports a function with the following arguments:
 
 
 
+# Install
+
+npm publish is problematic now for some reason.  
+clone the project or copy the module file by hand (just one file) to check it out...
+
+As soon as it gets publish, all it takes is a:
+
+    npm install hot-repl
+
+
+
 # Tutorial
 
 The `example-server-app.js` defines ST as `{a:1, b:2}` and defines FN as the functions `add` and `atEverySecond`.
