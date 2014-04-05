@@ -1,21 +1,32 @@
 # Intro
 
-Hot-swap aims at offering the developer a way in the app while its running, be exposing a REPL via TCP.
+**hot-repl** aims at offering the developer a way in the app while its running, exposing a REPL via TCP.
 
-For it to work:
+For it to work you must respect these constraints:
 
 * your program must have its state unified in a state object named ST.
 
 * all relevant functions in use must be defined in another object, named FN.
 
-* functions defined in FN must only refer/change other FN functions and ST members.
+* functions defined in FN must only refer/change other FN functions and/or ST members.
 
 If you respect these rules, fire hot-repl by passing it ST, FN and a port number.
 
 Now when you run your app it will keep the TCP port opened.
 
 If you connect to it via telnet, you can hotswap any of their members.  
-That means you can turn on debug, inspect the app state, patch faulty functions, etc.
+That means you can turn on debug vars, inspect the app state, patch faulty functions, etc.
+
+
+
+# API
+
+the `hot-repl` exports a function with the following arguments:
+
+* {Object}  ST - state object
+* {Object}  FN - functions object
+* {Number}  [tcpPort]=5566 - TCP port to use
+* {Boolean} [debug]=false - if trueish logs TCP port and TCP client connections and disconnections
 
 
 

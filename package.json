@@ -1,10 +1,9 @@
 {
   "name": "hot-repl",
   "version": "0.1.0",
-  "description": "asd",
+  "description": "inspect state, replace functions, kill app, all at the distance of a TCP connection",
   "main": "hot-repl.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,14 @@
     "debug",
     "hotswap"
   ],
-  "author": "jose.pedro.dias@gmail.com",
+  "author": {
+    "name" : "José Pedro Dias",
+    "email" : "jose.pedro.dias@gmail.com",
+    "url" : "http://josepedrodias.com/"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JosePedroDias/hot-repl/issues"

@@ -4,6 +4,25 @@ var net  = require('net'),
 
 
 var hotRepl = function(ST, FN, tcpPort, debug) {
+    // check arguments
+    if (typeof ST !== 'object') {
+        throw 'first argument ST must be an object!';
+    }
+
+    if (typeof FN !== 'object') {
+        throw 'secound argument FN must be an object!';
+    }
+
+    if (tcpPort === undefined) {
+        tcpPort = 5566;
+    }
+    else if (typeof tcpPort === 'number' && tcpPort % 1 === 0) {
+    }
+    else {
+        throw 'third argument tcpPort is an optional natural number. Defaults to 5566 if ommitted.';
+    }
+
+    
     var sandbox = {
         ST: ST,
         FN: FN
