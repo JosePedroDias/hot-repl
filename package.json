@@ -1,6 +1,6 @@
 {
   "name": "hot-repl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "inspect state, replace functions, kill app, all at the distance of a TCP connection",
   "main": "hot-repl.js",
   "scripts": {
