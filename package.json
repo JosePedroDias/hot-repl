@@ -1,0 +1,26 @@
+{
+  "name": "hot-repl",
+  "version": "0.1.0",
+  "description": "asd",
+  "main": "hot-repl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JosePedroDias/hot-repl.git"
+  },
+  "keywords": [
+    "repl",
+    "tcp",
+    "nodejs",
+    "debug",
+    "hotswap"
+  ],
+  "author": "jose.pedro.dias@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosePedroDias/hot-repl/issues"
+  },
+  "homepage": "https://github.com/JosePedroDias/hot-repl"
+}
