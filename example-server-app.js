@@ -1,4 +1,5 @@
-var hot = require('./hot-repl');
+//var hot = require('./hot-repl');
+var hot = require('hot-repl');
 
 
 var ST = { // state, data that change

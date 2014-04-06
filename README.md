@@ -77,8 +77,8 @@ So how would we get rid of that repeatable task? You just assign the interval ti
 
 To print stuff in the server just:
 
-console.log('hi')
+    console.log('hi')
 
 And to kill it:
 
-process.exit(0);
+    process.exit(0);
