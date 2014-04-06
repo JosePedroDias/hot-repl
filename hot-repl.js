@@ -1,3 +1,5 @@
+'use strict';
+
 var net  = require('net'),
     repl = require('repl'),
     vm   = require('vm');
@@ -22,7 +24,7 @@ var hotRepl = function(ST, FN, tcpPort, debug) {
         throw 'third argument tcpPort is an optional natural number. Defaults to 5566 if ommitted.';
     }
 
-    
+
     var sandbox = {
         ST: ST,
         FN: FN
@@ -43,7 +45,7 @@ var hotRepl = function(ST, FN, tcpPort, debug) {
             output:    socket,
             useGlobal: false,
             terminal:  false,
-            eval:     function eval(code, _context_, _filename_, cb) {
+            eval: function(code, _context_, fn, cb) {
                 try {
                     var res= vm.runInContext(code, context, 'dynamic.vm');
                     cb(null, res);
